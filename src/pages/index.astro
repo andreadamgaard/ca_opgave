@@ -1,16 +1,40 @@
 ---
-
+import "../styles/style.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import ContainerRight from "../components/ContainerRight.astro"
+import ContainerLeft from "../components/ContainerLeft.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+		<h1>Bedste a-kasse med service i top</h1>
+		<section class="banner">
+			<h1>Du skulle vist ha...</h1>
+		</section>
+		<section>
+			<h2>
+				Verden er fyldt med ting du burde gøre <br> her er 5 nemme og hurtige...
+			</h2>
+		</section>
+		<ContainerRight
+		number="#1"
+		body="Meld dig ind i fagforening nu..." 
+		body2="Det tager kun 10 min"
+		/>
+
+		<ContainerLeft 
+		number="#2"
+		body="Tilmeld dig jobsøgnings kursus..." 
+		body2="Så bliver den kommende chef glad"
+		/>
+
+		<ContainerRight
+		number="#3"
+		body="Få nu bestilt den forsikring..." 
+		body2="Vi tilbyder ekstra billige forsikringer til studerende "
+		/>
+		<ContainerLeft 
+		number="#4"
+		body="Få adgang til gaveshoppen" 
+		body2="Hvis du melder dig ind, får du adgang til vores gaveshop,her kan du købe billige restaurant besøg, mærkevarer mm."
+		/>
+</MainLayout>

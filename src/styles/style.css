@@ -1,0 +1,24 @@
+:root {
+  /* Colour styles */
+  --background: #f1f1ec;
+  --primary: #3677a9;
+  --secondary: #204a78;
+  --contrast: #c54c47;
+  --lighter_bg: #ffffff;
+  --off-white: #e6e6df;
+
+  /* Font sizes */
+  --text_s: 1rem;
+  --text_m: 2rem;
+  --text_l: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--background);
+}
