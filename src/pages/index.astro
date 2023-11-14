@@ -1,15 +1,13 @@
 ---
 import "../styles/style.css";
 import MainLayout from "../layouts/MainLayout.astro";
-import ContainerRight from "../components/ContainerRight.astro"
+import ContainerRight from "../components/ContainerRight.astro";
 import ContainerLeft from "../components/ContainerLeft.astro";
+import Banner from "../components/Banner.astro";
 ---
 
 <MainLayout>
-		<h1>Bedste a-kasse med service i top</h1>
-		<section class="banner">
-			<h1>Du skulle vist ha...</h1>
-		</section>
+		<Banner/>
 		<section class="verden_er">
 			<h2>
 				Verden er fyldt med ting du burde gøre. <br> Her er 4 nemme og hurtige...
@@ -41,7 +39,7 @@ import ContainerLeft from "../components/ContainerLeft.astro";
 		<ContainerLeft 
 		imgPath="/photos/Bag-Outline.svg"
 		number="#4"
-		body="Få adgang til gaveshoppen" 
+		body="Få adgang til gaveshoppen..." 
 		body2="Hvis du melder dig ind, får du adgang til vores gaveshop. Her kan du købe billige restaurant besøg, mærkevarer mm."
 		/>
 </MainLayout>
@@ -55,5 +53,6 @@ import ContainerLeft from "../components/ContainerLeft.astro";
 
 	.verden_er h2 {
 		text-align: center;
+		padding: 2% 2% 2% 2%;
 	}
 </style>

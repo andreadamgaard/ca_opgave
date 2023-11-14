@@ -12,6 +12,7 @@
   --text_s: 0.9rem;
   --text_m: 1.3rem;
   --text_l: 1.8rem;
+  --text_xl: 2rem;
 }
 @font-face {
   font-family: "nexa_boldregular";
