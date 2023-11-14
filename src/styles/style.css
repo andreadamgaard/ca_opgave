@@ -8,9 +8,10 @@
   --off-white: #f1f1ec;
 
   /* Font sizes */
-  --text_s: 1rem;
-  --text_m: 2rem;
-  --text_l: 3rem;
+  --text_xs: 0.85rem;
+  --text_s: 0.9rem;
+  --text_m: 1.3rem;
+  --text_l: 1.8rem;
 }
 @font-face {
   font-family: "nexa_boldregular";

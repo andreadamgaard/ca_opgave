@@ -1,6 +1,7 @@
 ---
 import "../styles/style.css";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -19,7 +20,12 @@ import Header from "../components/Header.astro";
             <slot />
         </main>
 	</body>
-    <footer>
+		<Footer />
 
-    </footer>
 </html>
+
+<style>
+	main {
+		padding-bottom: 2rem;
+	}
+</style>

@@ -10,31 +10,50 @@ import ContainerLeft from "../components/ContainerLeft.astro";
 		<section class="banner">
 			<h1>Du skulle vist ha...</h1>
 		</section>
-		<section>
+		<section class="verden_er">
 			<h2>
-				Verden er fyldt med ting du burde gøre <br> her er 5 nemme og hurtige...
+				Verden er fyldt med ting du burde gøre. <br> Her er 4 nemme og hurtige...
+
+			</h2>
+			<h2>
 			</h2>
 		</section>
 		<ContainerRight
+		imgPath="/photos/Star.svg"
 		number="#1"
 		body="Meld dig ind i fagforening nu..." 
 		body2="Det tager kun 10 min"
 		/>
 
 		<ContainerLeft 
+		imgPath="/photos/Search-Outline.svg"
 		number="#2"
 		body="Tilmeld dig jobsøgnings kursus..." 
 		body2="Det bliver din kommende chef glad for"
 		/>
 
 		<ContainerRight
+		imgPath="/photos/Lock-Outline.svg"
 		number="#3"
 		body="Få nu bestilt den forsikring..." 
 		body2="Vi tilbyder ekstra billige forsikringer til studerende "
 		/>
 		<ContainerLeft 
+		imgPath="/photos/Bag-Outline.svg"
 		number="#4"
 		body="Få adgang til gaveshoppen" 
-		body2="Hvis du melder dig ind, får du adgang til vores gaveshop,her kan du købe billige restaurant besøg, mærkevarer mm."
+		body2="Hvis du melder dig ind, får du adgang til vores gaveshop. Her kan du købe billige restaurant besøg, mærkevarer mm."
 		/>
 </MainLayout>
+
+<style>
+	.verden_er {
+		display: flex;
+		flex-direction: column;
+		font-size: var(--text_xs);
+	}
+
+	.verden_er h2 {
+		text-align: center;
+	}
+</style>

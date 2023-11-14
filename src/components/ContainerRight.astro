@@ -1,11 +1,14 @@
 ---
-const { body, body2, number } = Astro.props;
+const { imgPath, body, body2, number } = Astro.props;
+import "../styles/style.css";
 ---
 <div class="container">
 <section>
 	<div class="text">
 		<div class="indhold_text">
-			<img src="" alt="">
+	       <div class="image">
+			<img src={imgPath} alt="SVG">
+		   </div>
 			<h3>{body}</h3>
 			<h3>{body2}</h3>
 		</div>
@@ -16,6 +19,16 @@ const { body, body2, number } = Astro.props;
 </section>
 </div>
 <style>
+	img{
+	width: 40px;
+	height: auto;
+}
+
+.image{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
+}
 	.container{
 		padding-top: 10%;
 	}
@@ -24,11 +37,21 @@ const { body, body2, number } = Astro.props;
 		padding: 10% 0% 10% 8%;
 		border-radius: 0px 0px 50px;
 		margin-right: 40px;
+		color: var(--off-white);
+
 	}
 
 	.text{
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.indhold_text{
+		font-size: var(--text_s);
+	}
+
+	h3{
+		padding-bottom: 0.5rem;
 	}
 
 	.nummer{
