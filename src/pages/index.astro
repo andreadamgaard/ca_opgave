@@ -11,9 +11,6 @@ import Banner from "../components/Banner.astro";
 		<section class="verden_er">
 			<h2>
 				Verden er fyldt med ting du burde gøre. <br> Her er 4 nemme og hurtige...
-
-			</h2>
-			<h2>
 			</h2>
 		</section>
 		<ContainerRight
@@ -54,5 +51,11 @@ import Banner from "../components/Banner.astro";
 	.verden_er h2 {
 		text-align: center;
 		padding: 2% 2% 2% 2%;
+	}
+
+	@media (min-width: 800px){
+			.verden_er {
+		font-size: 2rem;
+	}
 	}
 </style>
